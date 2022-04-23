@@ -14,7 +14,7 @@
       url: https://deb.nodesource.com/
       version: node_16.x
     ansible.builtin.apt_repository:
-        repo: "deb {{ url }}{{ version }} {{ ansible_distribution_release }} main"
+      repo: "deb {{ url }}{{ version }} {{ ansible_distribution_release }} main"
 
   - name: Install Node.js
     ansible.builtin.apt:
